@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning the repository...'
-                git url: 'https://github.com/guru2112/Maven.git', branch: 'main' // Update with your repo URL and branch
+                git url: 'https://github.com/guru2112/Maven.git', branch: 'master' // Update with your repo URL and branch
             }
         }
         
