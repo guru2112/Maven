@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'mvn clean package' // Adjust the command based on your needs
+                sh 'mvn clean' // Adjust the command based on your needs
             }
         }
 
