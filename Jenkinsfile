@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'mvn clean' // Adjust the command based on your needs
+                bat 'mvn clean' // Adjust the command based on your needs
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'mvn test' // This will run your tests if you have any
+                bat 'mvn test' // This will run your tests if you have any
             }
         }
 
